@@ -4,7 +4,7 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 
 @Service
-public class WhatsappService {
+public class WhatsappFeature {
     WhatsappRepository whatsappRepository = new WhatsappRepository() ;
     public boolean isNewUser(String mobile) {
         return whatsappRepository.isNewUser(mobile);
