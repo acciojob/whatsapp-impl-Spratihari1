@@ -20,7 +20,7 @@ public class WhatsappService {
     }
 
     public int createMessage(String content) {
-        return whatsappRepositoryi.createMessage(content);
+        return whatsappRepository.createMessage(content);
     }
 
     public int sendMessage(Message message, User sender, Group group) throws Exception {
@@ -30,4 +30,5 @@ public class WhatsappService {
     public String changeAdmin(User approver, User user, Group group) throws Exception {
         return whatsappRepository.changeAdmin(approver, user, group);
     }
+    e
 }
